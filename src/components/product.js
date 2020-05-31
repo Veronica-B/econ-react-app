@@ -1,6 +1,6 @@
 import React, {useState}from 'react';
 import product from '../Products.json';
-import '../App.css'
+
 
 const ProductCard = () => {
     const [products, setProduct]= useState(product);

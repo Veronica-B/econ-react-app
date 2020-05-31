@@ -16,9 +16,9 @@ class App extends React.Component {
       <Switch>
         {/* Switch is needed because i have mutiple routes */}
      <Route exact path="/" component={ProductsPage} />
-     {/* <Route exact path="/index.html" component={IndexPage} /> */}
+     <Route exact path="/index.html" component={IndexPage} />
      <Route exact path="/products.html" component={ProductsPage} />
-     {/* <Route exact path="/contact.html" component={ContactPage} /> */}
+     <Route exact path="/contact.html" component={ContactPage} />
      </Switch>
     </Router>
   );

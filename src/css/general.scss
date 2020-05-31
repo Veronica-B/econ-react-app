@@ -7,7 +7,7 @@ $creme-page:#ffffe6;
 $border1px: solid 1px;
 $cafe:#6e5a15;
  
- @import "./scss_partials/nav";
+ @import "scss_partials/nav";
  @import "scss_partials/footer";
  @import "scss_partials/filter";
  @import "scss_partials/slideshow";
@@ -18,7 +18,8 @@ $cafe:#6e5a15;
     margin: 0;
     font-family: $font-family;
   }
-  
+
+ 
   .background_color {
     background-color:$creme-page;
   }

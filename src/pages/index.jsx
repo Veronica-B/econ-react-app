@@ -94,7 +94,7 @@ const IndexPage = () =>{
 <Navbar />
   
     <div className="slideshow">
-        {/* <button className="arrow" id="left-arrow" onClick={()=> change_Image()}>&lt;</button> */}
+        <button className="arrow" id="left-arrow" >&lt;</button>
         <img id="img" className="image" src="images/img1.jpg" alt="people learning"/>
         <button className="arrow" id="right-arrow">&gt;</button>
         <div className="bottom_slideshow">
