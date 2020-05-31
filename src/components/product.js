@@ -68,7 +68,7 @@ const ProductCard = () => {
         <React.Fragment>
             <div className="filter-box">
                 <p className="filter-text">Price:</p>
-                <button className="filter-button" onClick={() => handleGreaterThanSeven()}>Over $7 </button>
+                <button className="filter-button" onClick={() => handleGreaterThanSeven()}> Over $7 </button>
                 <button className="filter-button" onClick={() => handleLowerThanSeven()} >Under $7</button>
                 <p className="filter-text">Category:</p>
                 <button className="filter-button" onClick={() => handleNineToTen()}>Grade 9-10</button>
