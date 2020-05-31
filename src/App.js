@@ -15,13 +15,14 @@ class App extends React.Component {
     <Router >
       <Switch>
         {/* Switch is needed because i have mutiple routes */}
+     <Route exact path="/" component={IndexPage} />
      <Route exact path="/index.html" component={IndexPage} />
      <Route exact path="/products.html" component={ProductsPage} />
      <Route exact path="/contact.html" component={ContactPage} />
      </Switch>
     </Router>
   );
-}
+  }
 }
 
 export default App;
