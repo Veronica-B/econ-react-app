@@ -246,6 +246,7 @@
   background-color: #93cf70;
   padding: 15px;
   opacity: 50%;
+  z-index: 15;
 }
 
 .filter-button {
