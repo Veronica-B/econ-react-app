@@ -47,14 +47,49 @@
     margin-right: 20px;
     display: inline-flex;
   }
+
+  &__nav{
+    display: inline-flex;
+    list-style: none;
+    justify-content: space-evenly;
+    text-align: center;
+    grid-column: 1/4;
+  }
+
+  &__text{
+    font-size: 35px;
+    color:$cafe;
+    display: inline-flex;
+    text-decoration: none;
+  }
 }
 
 
   
 @media only screen and (max-width: 568px) {
-
-    .footer__icon {
-      height: 35px;
-      width: 35px;
+  .footer{
+    grid-template-rows: 100px  100px ;
+    .social-content{
+    &__text {
+      margin:10px ;
+      font-size: 20px;
     }
+
+    &__icon {
+      height: 30px;
+      width: 30px;
+  }
+  }
+
+  
+    &__dots{
+      height:15px;
+      width:15px;
+      margin-right: 10px;
+    }
+  
+    &__text{
+      font-size: 15px;
+    }
+}
 }
