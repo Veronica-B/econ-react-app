@@ -2,8 +2,7 @@ import React from 'react';
 import Navbar from '../components/navbar.js';
 import Footer from '../components/footer';
 
-class ContactPage extends React.Component {
-    render() {
+const ContactPage = () => {
         return (
             <body class="background_color">
 
@@ -30,7 +29,7 @@ class ContactPage extends React.Component {
                 <Footer />
 </body >
 )
-}}
+}
 
 export default ContactPage;
 

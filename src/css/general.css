@@ -70,8 +70,6 @@
   .sticky {
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
-    z-index: 15;
   }
   .navigation__items:hover {
     background-color: transparent;
@@ -98,12 +96,12 @@
     z-index: 8;
     -webkit-animation-name: slide_to_the_left;
             animation-name: slide_to_the_left;
-    -webkit-animation-duration: .5s;
-            animation-duration: .5s;
+    -webkit-animation-duration: 5.5s;
+            animation-duration: 5.5s;
   }
   @-webkit-keyframes slide_to_the_left {
     from {
-      left: -100px;
+      left: -200px;
     }
     to {
       left: 0px;
@@ -111,7 +109,7 @@
   }
   @keyframes slide_to_the_left {
     from {
-      left: -100px;
+      left: -200px;
     }
     to {
       left: 0px;
@@ -319,14 +317,14 @@
       grid-template-columns: repeat(8, 1fr);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  background-color: #93cf70;
+  background: rgba(147, 207, 112, 0.5);
   padding: 15px;
   z-index: 15;
 }
 
 .filter-button {
   height: 45px;
-  background-color: #6e5a15;
+  background: #a39253;
   padding: 10px;
   border-radius: 20%;
   text-decoration: none;
@@ -336,7 +334,7 @@
 }
 
 .filter-button__reset {
-  background-color: #9c2824;
+  background-color: #fa6e69;
 }
 
 .filter-text {

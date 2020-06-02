@@ -2,15 +2,15 @@
     display: grid;
    grid-template-columns: repeat(8, 1fr);
    grid-template-rows: auto;
-    background-color: $clover;
+   background: rgba(147, 207, 112,0.50%);
     padding:15px;
-    // opacity:51%;
+   
     z-index: 15;
 }
 
     .filter-button{  
         height: 45px;
-        background-color: $cafe;
+        background: #a39253;
         padding: 10px;
         border-radius: 20%;
         text-decoration: none;
@@ -19,7 +19,7 @@
         cursor: pointer;
 
         &__reset{
-            background-color: #9c2824;
+            background-color: #fa6e69;
         }
     }
 

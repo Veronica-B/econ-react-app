@@ -47,7 +47,7 @@ const Navbar = () => {
 
                         </ul>
                     </nav>
-                    <nav className="side_navigation_mobile">
+                    <nav className="side_navigation_mobile ">
                         <ul>
                             <li className=" side_navigation_mobile__options"><a className="navigation__items" href="index.html">Home
                 </a></li>

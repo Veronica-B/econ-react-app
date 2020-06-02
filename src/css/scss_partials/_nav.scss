@@ -57,14 +57,14 @@
   .side_navigation_mobile__options {
     display: none;
   }
+
+ 
   /*side navigation*/
   
   @media only screen and (max-width: 568px) {
 
     .sticky{
       position: sticky;
-      top:0;
-      z-index: 15;
     }
 
     .navigation__items:hover {
@@ -84,12 +84,12 @@
       width: 100vw;
       z-index: 8;
       animation-name:slide_to_the_left;
-      animation-duration: .5s;
+      animation-duration: 5.5s;
     }
     
     @keyframes slide_to_the_left{
-      from {left:-100px}
-      to {left:0px}
+      from {left:-200px;}
+      to {left:0px;}
     }
     .side_navigation_mobile__options {
       display: block;

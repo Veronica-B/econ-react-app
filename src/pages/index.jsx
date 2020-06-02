@@ -1,102 +1,37 @@
 import React, {useState} from 'react';
 import Navbar from '../components/navbar.js';
 import Footer from '../components/footer';
+import images from '../images.json';
 
 const IndexPage = () =>{
+    const [i, setCount]= useState(0);
+    const [image, setImage]= useState(images[i]);
 
-// let dot1=document.getElementById('dot1');
-// let dot2=document.getElementById('dot2');
-// let dot3=document.getElementById('dot3');
-// let i= 0;
+   const  handleRight = () =>{
+       let slide = [...images];
+       setCount(i+1)
+       console.log(slide[i].src)
+       console.log(i)
 
-// //0 1 2
+       return setImage (slide[i+1].src) ;
+   }
 
-// const images= ['images/img1.jpg', 'images/img2.jpg', 'images/img3.jpg'];
-// const dots=[dot1, dot2, dot3];
-
-// const [pic, setImage] = useState(images[0]);
-// //10000 is equaled to 10 seconds.
-// const time= 1000;
-// // let img=document.getElementById('img').setAttribute('src', pic);
-
-
-
-// const change_Image= ()=>{
-//     img.src =images[i];
-
-//     switch(i){
-//         default:
-//         // dots[i].style["height"]="40px"
-//         // dots[i].style["width"]="40px";
-//         // dots[2].style["height"]="20px"
-//         // dots[2].style["width"]="20px";
-//         setImage(images[0])
-//         i=i+1;
-//         break;
-
-//         case 1:
-//         // dots[i].style["height"]="40px"
-//         // dots[i].style["width"]="40px";
-//         // dots[i-1].style["height"]="20px"
-//         // dots[i-1].style["width"]="20px";
-//         setImage(images[1])
-//         i=i+1;
-//         break;
-
-//         case 2:
-//         // dots[i].style["height"]="40px"
-//         // dots[i].style["width"]="40px";
-//         // dots[i-1].style["height"]="20px"
-//         // dots[i-1].style["width"]="20px";
-//         setImage(images[2])    
-//         i=0;
-//         break;    
-//     }
-// }
-
-
-// function change_Image_Reverse(){
-//     img.src =images[i];
-//         switch(i){
-//             default:
-//             // dots[i].style["height"]="40px"
-//             // dots[i].style["width"]="40px";
-//             // dots[i+1].style["height"]="20px"
-//             // dots[i+1].style["width"]="20px";    
-//             i=2;
-//             break;
-
-//             case 1:
-//             dots[i].style["height"]="40px"
-//             dots[i].style["width"]="40px";
-//             dots[i+1].style["height"]="20px"
-//             dots[i+1].style["width"]="20px";    
-//             i=i-1;
-           
-//             break;
- 
-//             case 2:
-//             // dots[i].style["height"]="40px"
-//             // dots[i].style["width"]="40px";
-//             // dots[0].style["height"]="20px"
-//             // dots[0].style["width"]="20px";    
-//             i=i-1;
-//             break;    
-//         }
-// }
-
-
-
-
+   const  handleLeft = () =>{
+    let slide = [...image];
+    setImage (slide.id --) ;
+    return slide.src
+}
         return(
+
+            
 <body className="background_color">
 
 <Navbar />
   
     <div className="slideshow">
-        <button className="arrow" id="left-arrow" >&lt;</button>
-        <img id="img" className="image" src="images/img1.jpg" alt="people learning"/>
-        <button className="arrow" id="right-arrow">&gt;</button>
+        <button className="arrow" onClick={() => handleLeft()} >&lt;</button>
+        <img className="image" src={images[i].src} alt="people learning"/>
+        <button className="arrow"  onClick={() => handleRight()}>&gt;</button>
         <div className="bottom_slideshow">
             <div id="dot1" className="dots"></div>
             <div id="dot2" className="dots"></div>

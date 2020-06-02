@@ -4,8 +4,7 @@ import Navbar from '../components/navbar.js';
 import Footer from '../components/footer.js';
 import '../css/general.css'
 
-class ProductsPage extends React.Component {
-  render(){
+const ProductsPage = () => {
   return (
     <div>
       <Navbar />
@@ -18,6 +17,6 @@ class ProductsPage extends React.Component {
     </div>
   );
 }
-}
+
 
 export default ProductsPage;
