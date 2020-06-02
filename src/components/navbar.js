@@ -33,7 +33,7 @@ const Navbar = () => {
                             <li className="navigation__options"> <a  className="navigation__items" href="index.html">Home</a> </li>
 
 
-                            <li className="navigation__options"> <a className="navigation__items active" href="products.html">Products</a></li>
+                            <li className="navigation__options"> <a className="navigation__items" href="products.html">Products</a></li>
 
 
                             <li className="navigation__options"> <a className="navigation__items" href="contact.html">Contact Us</a></li>
@@ -43,7 +43,10 @@ const Navbar = () => {
                                 <div className="hamburger--line line--one"></div>
                                 <div className="hamburger--line line--two"></div>
                                 <div className="hamburger--line line--three"></div>
+
                             </div>
+
+                            <span class="mobile__title">SHELVES</span>
 
                         </ul>
                     </nav>
@@ -52,7 +55,7 @@ const Navbar = () => {
                             <li className=" side_navigation_mobile__options"><a className="navigation__items" href="index.html">Home
                 </a></li>
 
-                            <li className="side_navigation_mobile__options side_navigation_mobile__options__current"><a className="navigation__items" href="products.html">Products
+                            <li className="side_navigation_mobile__options"><a className="navigation__items" href="products.html">Products
                 </a></li>
 
                             <li className="side_navigation_mobile__options"><a className="navigation__items" href="contact.html">Contact Us!

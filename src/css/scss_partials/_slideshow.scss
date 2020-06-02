@@ -19,8 +19,8 @@
 
     .dots{
         background-image: radial-gradient($creme-page 20%,$cafe 20%);
-        height:20px;
-        width:20px;
+        height:40px;
+        width:40px;
 
         &_current{
             background-image: radial-gradient($creme-page 40%,$cafe 20%);
@@ -32,6 +32,13 @@
     width: 100%;
 }
 
+
+@media only screen and (max-device-width: 1000px){
+
+    .slideshow{
+        grid-template-columns: 10% 80% 10%;
+    }
+}
 
 @media only screen and (max-device-width: 568px){
 

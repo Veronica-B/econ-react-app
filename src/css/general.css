@@ -33,8 +33,10 @@
 }
 
 .navigation__items {
-  color: #000066;
   font-family: Merriweather, Arial, sans-serif;
+  color: #6e5a15;
+  font-size: 40px;
+  text-shadow: 1px 1px #ffffe6, -1px 1px white, 1px -1px #ffffe6, -1px -1px white;
   text-decoration: none;
 }
 
@@ -52,6 +54,7 @@
   background-color: #6e5a15;
   padding: 15px;
   border-radius: 50%;
+  text-shadow: none;
 }
 
 .active {
@@ -65,6 +68,10 @@
   display: none;
 }
 
+.mobile__title {
+  display: none;
+}
+
 /*side navigation*/
 @media only screen and (max-width: 568px) {
   .sticky {
@@ -74,6 +81,14 @@
   .navigation__items:hover {
     background-color: transparent;
     color: #000066;
+  }
+  .mobile__title {
+    display: inline;
+    color: #6e5a15;
+    margin: auto;
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 1px 2px #ffffe6, -1px 1px white, 1px -1px #ffffe6, -1px -1px white;
   }
   .side_navigation_mobile {
     display: none;
@@ -231,6 +246,7 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  text-shadow: 1px 2px #ffffe6, -1px 1px white, 1px -1px #ffffe6, -1px -1px white;
 }
 
 .footer .social-content__icon {
@@ -262,6 +278,8 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-shadow: 1px 2px #ffffe6, -1px 1px white, 1px -1px #ffffe6, -1px -1px white;
+          box-shadow: 1px 2px #ffffe6, -1px 1px white, 1px -1px #ffffe6, -1px -1px white;
 }
 
 .footer__nav {
@@ -279,11 +297,10 @@
 }
 
 .footer__text {
-  font-size: 35px;
+  font-size: 45px;
   color: #6e5a15;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  font-weight: 300;
+  text-shadow: 1px 2px #ffffe6, -1px 1px white, 1px -1px #ffffe6, -1px -1px white;
   text-decoration: none;
 }
 
@@ -306,7 +323,7 @@
     margin-right: 10px;
   }
   .footer__text {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
@@ -348,9 +365,14 @@
         grid-template-columns: repeat(3, 1fr);
     margin-top: -4px;
   }
-  .filter-button {
+  .filter-box .filter-button {
     height: 45px;
     margin: 10px;
+  }
+  .filter-box .filter-button__reset {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
   }
   .filter-text {
     font-size: 15px;
@@ -391,8 +413,8 @@
 
 .bottom_slideshow .dots {
   background-image: radial-gradient(#ffffe6 20%, #6e5a15 20%);
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
 }
 
 .bottom_slideshow .dots_current {
@@ -402,6 +424,13 @@
 .image {
   height: 600px;
   width: 100%;
+}
+
+@media only screen and (max-device-width: 1000px) {
+  .slideshow {
+    -ms-grid-columns: 10% 80% 10%;
+        grid-template-columns: 10% 80% 10%;
+  }
 }
 
 @media only screen and (max-device-width: 568px) {

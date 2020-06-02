@@ -30,8 +30,10 @@
   }
   
   .navigation__items {
-    color: $darkblue;
     font-family: $font-family;
+    color:$cafe;
+    font-size: 40px;
+    text-shadow: 1px 1px $creme-page, -1px 1px white, 1px -1px $creme-page, -1px -1px white;
     text-decoration: none;
   }
   .navigation__icon--hamburger{
@@ -47,6 +49,7 @@
     background-color: $cafe;
     padding: 15px;
     border-radius: 50%;
+    text-shadow: none;
   }
   .active {
     color:$darkblue;
@@ -57,6 +60,11 @@
   .side_navigation_mobile__options {
     display: none;
   }
+
+  .mobile__title{
+  display: none;
+  }
+
 
  
   /*side navigation*/
@@ -70,6 +78,15 @@
     .navigation__items:hover {
       background-color: transparent;
       color: $darkblue;
+    }
+
+    .mobile__title{
+      display: inline;
+      color:$cafe;
+      margin: auto;
+      font-size: 30px;
+      font-weight: 600;
+      text-shadow: 1px 2px $creme-page, -1px 1px white, 1px -1px $creme-page, -1px -1px white,
     }
 
     .side_navigation_mobile {

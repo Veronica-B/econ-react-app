@@ -9,18 +9,32 @@ const IndexPage = () =>{
 
    const  handleRight = () =>{
        let slide = [...images];
-       setCount(i+1)
        console.log(slide[i].src)
+       if(i>1){
+        setCount(0);
+        
+        return setImage (slide[i].src)
+    }
+       setCount(i+1)
        console.log(i)
 
-       return setImage (slide[i+1].src) ;
+       return setImage (slide[i].src) ;
    }
 
    const  handleLeft = () =>{
-    let slide = [...image];
-    setImage (slide.id --) ;
-    return slide.src
-}
+    let slide = [...images].reverse();
+    console.log(slide)
+    if(i<1){
+        setCount(2);
+        return setImage (slide[i].src)
+    }
+       setCount(i-1)
+       console.log(i)
+
+       return setImage (slide[i].src) ;
+   
+   }
+
         return(
 
             
@@ -33,9 +47,9 @@ const IndexPage = () =>{
         <img className="image" src={images[i].src} alt="people learning"/>
         <button className="arrow"  onClick={() => handleRight()}>&gt;</button>
         <div className="bottom_slideshow">
-            <div id="dot1" className="dots"></div>
-            <div id="dot2" className="dots"></div>
-            <div id="dot3" className="dots"></div>
+            <div id={images[i].id} className="dots"></div>
+            <div id={images[i].id} className="dots"></div>
+            <div id={images[i].id} className="dots"></div>
         </div>
     </div>
     <h2 className="title">Best Sellers</h2>

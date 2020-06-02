@@ -32,12 +32,18 @@
    .filter-box{
     grid-template-columns: repeat(3, 1fr);
     margin-top: -4px;
-   }
+   
 
    .filter-button{  
     height: 45px;
     margin: 10px;
+
+    &__reset{
+            grid-column: 2/4;
+        }
+    
     }
+}
 
     .filter-text{
    font-size:15px;
