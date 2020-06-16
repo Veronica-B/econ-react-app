@@ -2,7 +2,7 @@
   <img width="300" height="250" src="public/images/logo.png">
 </p>
 
-## Shelves 
+# Shelves 
 
 This was a project where I created a site called Shelves that sells books for high schoolers. The site has a home, products, and contact page, and within the products page there are 12 items to choose from. This project was created in React and SASS.
 
