@@ -85,6 +85,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 - react-router-dom
 
+## Author
+
+Veronica Barcia
+
 ## License
 
 This project is licensed under the MIT License - see License.md for details
