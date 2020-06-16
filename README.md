@@ -1,3 +1,9 @@
+![books and an apple](publi/images/logo.png)
+
+## Shelves 
+
+This was a project where I created a site called Shelves that sells books for highschoolers. The site has a home, products, and contact page, and within the products there are 12 products to choose from. This project was created in React.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +72,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
