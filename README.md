@@ -1,10 +1,18 @@
- ![books and an apple](public/images/logo.png)
+<p align="center">
+  <img width="300" height="250" src="public/images/logo.png">
+</p>
 
 ## Shelves 
 
-This was a project where I created a site called Shelves that sells books for highschoolers. The site has a home, products, and contact page, and within the products there are 12 products to choose from. This project was created in React.
+This was a project where I created a site called Shelves that sells books for high schoolers. The site has a home, products, and contact page, and within the products page there are 12 items to choose from. This project was created in React and SASS.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Installation 
+
+ Type **`npm i`** or **`npm install`** </br >
+on the command line of the root directory, </br >
+in order to install all the packages that this project uses, which is listed further down .
 
 ## Available Scripts
 
@@ -73,4 +81,16 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
+## Built with {: #Built }
 
+- react-router-dom
+
+## License
+
+Copyright 2020 Veronica Barcia
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
