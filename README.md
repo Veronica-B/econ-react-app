@@ -1,4 +1,4 @@
-![books and an apple](publi/images/logo.png)
+ ![books and an apple](public/images/logo.png)
 
 ## Shelves 
 
