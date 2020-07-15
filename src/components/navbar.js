@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -30,13 +30,13 @@ const Navbar = () => {
                         <ul className="navigation">
                             <li className="navigation__options"> <img className="navigation__company_logo" src="images/logo.png" alt="company logo" /></li>
 
-                            <li className="navigation__options"> <a  className="navigation__items" href="index.html">Home</a> </li>
+                            <li className="navigation__options"> <Link to="/index.html"  className="navigation__items" >Home</Link></li>
 
 
-                            <li className="navigation__options"> <a className="navigation__items" href="products.html">Products</a></li>
+                            <li className="navigation__options"> <Link to ="/products.html" className="navigation__items" >Products</Link></li>
 
 
-                            <li className="navigation__options"> <a className="navigation__items" href="contact.html">Contact Us</a></li>
+                            <li className="navigation__options"> <Link to="/contact.html" className="navigation__items">Contact Us</Link></li>
 
 
                             <div className="hamburger--container" onClick={() => handleMobileNav()}>
